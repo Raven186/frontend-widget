@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        MODE: ${MODE} # Передаем значение MODE как аргумент сборки
+    container_name: myApp-frontend
+    ports:
+      - "${PORT}:${PORT}" # Пробрасываем PORT для фронтенда
+    environment:
+      - NODE_ENV=${MODE} # Передаем MODE для настройки окружения
+      - PORT=${PORT}     # Указываем порт для работы приложения
+    restart: always
+    volumes:
+      - .:/app
+      - /app/node_modules
