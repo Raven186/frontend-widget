@@ -83,11 +83,11 @@ docker image prune --filter="dangling=true"
 ## 🧰 Стек технологий
 
 - **Frontend**: React + TypeScript
-- **State Management**: Zustand
+- **State Management**: Custom Hooks
 - **HTTP Клиент**: Axios
 - **Сборщик**: Vite
 - **Стили**: Tailwind CSS
-- **Docker**: для контейнеризации
+- **Контейнеризация**: Docker
 
 ---
 
