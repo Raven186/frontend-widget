@@ -35,7 +35,7 @@ pnpm dev
 Проект будет доступен по адресу:
 
 ```
-http://localhost:5173
+http://localhost:8080
 ```
 
 ---
@@ -75,7 +75,7 @@ docker-compose down
 Для удаления неиспользуемых образов, контейнеров и сетей выполните:
 
 ```bash
-docker system prune -f
+docker image prune --filter="dangling=true"
 ```
 
 ---
