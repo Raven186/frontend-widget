@@ -67,3 +67,4 @@ plaintext
  ┣ 📜 package.json    # Зависимости проекта
  ┣ 📜 pnpm-lock.yaml  # Лок-файл PNPM
  ┗ 📜 vite.config.ts  # Конфигурация Vite
+ 
